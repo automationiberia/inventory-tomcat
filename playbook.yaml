@@ -1,0 +1,9 @@
+---
+- name: Test inventory variables
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: Print instances for each host
+      debug:
+        msg: "Host {{ inventory_hostname }} has instances: {{ hostvars[inventory_hostname].deploy_vars.instances.keys() | list }}"
+

@@ -1,0 +1,24 @@
+deploy_vars:
+  instances:
+    tom-ins003:
+      exploited: true
+      fsdev: /dev/mapper/vgtomcat-lv_tomcat_datos
+      path: /tomcat-fs/tomcat-instance-003/
+      user: tomcat_user
+    tom-ins004:
+      exploited: true
+      fsdev: /dev/mapper/vgtomcat-lv_tomcat_datos
+      path: /tomcat-fs/tomcat-instance-004/
+      user: tomcat_user
+    tom-ins005:
+      exploited: true
+      fsdev: /dev/mapper/vgtomcat-lv_tomcat_datos
+      path: /tomcat-fs/tomcat-instance-005/
+      user: tomcat_user
+    tom-ins007:
+      exploited: true
+      fsdev: /dev/mapper/vgtomcat-lv_tomcat_datos
+      path: /tomcat-fs/tomcat-instance-007/
+      user: tomcat_user
+  is_NFS: false
+  type: Tomcat
